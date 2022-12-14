@@ -32,14 +32,11 @@ When accessing the web server for the first time, a brief setup process will be 
 
 Once done,
 
-1. save the LocalSettings.php file in the same directory of the Docker-Compose configuration,
+1. save the LocalSettings.php file in the wiki sub-directory,
 
 2. uncomment the relevant line in the YAML file (should be line 20),
 
-3. append at the end of the file the following line
-```php
-   include_once "LocalSettings.local.php";
-``` 
+3. append at the end of the file the contents of the 'LocalSettings.local.php' file
 
 4. and finally restart the images.
 
@@ -73,4 +70,4 @@ $ sudo docker-compose exec smw php maintenance/runJobs.php
 
 Please ensure that the job queue is empty.
 
-*Nota bene:*  to be able to convert Semantic Drilldown filters into ask queries you mus belong to the **exporters** group.
+*Nota bene:*  to be able to convert Semantic Drilldown filters into ask queries you must belong to the **exporters** group.

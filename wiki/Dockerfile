@@ -110,6 +110,10 @@ RUN sed -i -e "/Wikimedia: {/r /var/www/html/DBNS_Virus.js" -e "s/Wikimedia: {//
 # patch for Timelines
 COPY SimileTimeline/labellers.js extensions/SemanticResultFormats/formats/timeline/resources/SimileTimeline/scripts/
 
+# patch for the new PHP
+RUN sed -i "s/value != 0/value != ''/" extensions/SemanticMediaWiki/src/DataValues/Number/IntlNumberFormatter.php
+
+
 # Virus data
 COPY schema_Virus.xml /var/www/html/
 COPY data_Virus_pos.xml /var/www/html/

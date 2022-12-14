@@ -1,10 +1,3 @@
-<?php
-
-# Protect against web entry
-if ( !defined( 'MEDIAWIKI' ) ) {
-	exit;
-}
-
 ## The URL paths to the logo.  Make sure you change this from the default,
 ## or else you'll overwrite your logo when you upgrade!
 $wgLogos = [ '1x' => "$wgResourceBasePath/resources/assets/virus_135x135.png" ];
@@ -167,7 +160,6 @@ $pchDomains = [
 ];
 
 ini_set('display_errors', 0);
-error_reporting(E_NONE);
 //$wgDebugToolbar = true;
 //$wgShowExceptionDetails = true;
 //$wgParserCacheType = CACHE_NONE;
