@@ -32,11 +32,11 @@ When accessing the web server for the first time, a brief setup process will be 
 
 Once done,
 
-1. save the LocalSettings.php file in the wiki sub-directory,
+1. save the LocalSettings.php file in the 'wiki' sub-directory,
 
 2. uncomment the relevant line in the YAML file (should be line 20),
 
-3. append at the end of the file the contents of the 'LocalSettings.local.php' file
+3. append at the end of the file the contents of the 'LocalSettings.local.php' file,
 
 4. and finally restart the images.
 

@@ -15,9 +15,9 @@ services:
       - database
     volumes:
       - ./wiki/images:/var/www/html/images
-      # After initial setup, download LocalSettings.php to the same directory as
-      # this yaml and uncomment the following line and restart
-      - ./wiki/LocalSettings.php:/var/www/html/LocalSettings.php
+      # After initial setup, download LocalSettings.php into the wiki sub-directory
+      # and uncomment the following line and restart
+      #- ./wiki/LocalSettings.php:/var/www/html/LocalSettings.php
   database:
     image: mariadb
     restart: always
