@@ -9284,8 +9284,9 @@ __SHOWINDRILLDOWN__
 &lt;hr /&gt;
 &lt;h2&gt;Map of the property &#39;Random location of contact&#39;&lt;/h2&gt;
 
-{{#ask: [[Category:Locations]]
- |?Random location of contact.Coordinates
+{{#ask: [[Category:Positives]]
+ |?Random location of contact
+ |?Random location of contact.Coordinates=Coordinates
  |format=leaflet
  |offset=0
  |link=all
